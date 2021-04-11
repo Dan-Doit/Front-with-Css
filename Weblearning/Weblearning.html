@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./Weblearning.css" />
+    <title>My first Web Page</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="https://www.google.com">구글로 가기</a>
+        <a href="https://www.naver.com">네이버 가기</a>
+        <a href="https://www.yahoo.com">야후 가기</a>
+        <a href="https://www.facebook.com">페이스북 가기</a>
+      </div>
+    </header>
+
+    <div id="id01">
+      <div class="class01"></div>
+    </div>
+    <div id="id02">
+      <div class="class01"></div>
+    </div>
+    <footer>
+      <p>조본이 멍청함 2021-04-11</p>
+    </footer>
+  </body>
+  <script>
+    //   var let const
+    let id02 = document.getElementById("id02").style;
+    const arr = ["red", "orange", "yellow", "green", "blue", "navy", "purple"];
+    let count = 0;
+
+    const changeColor = (id02, arr) => {
+      id02.background = arr[count];
+
+      count += 1;
+
+      if (count == 7) {
+        count = 0;
+      }
+    };
+
+    setInterval(() => {
+      changeColor(id02, arr);
+    }, 1000);
+  </script>
+</html>

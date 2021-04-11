@@ -1,0 +1,27 @@
+#id01 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: yellow;
+  float: left;
+}
+#id01:hover {
+  background: lightcoral;
+}
+#id02 {
+  width: 500px;
+  height: 500px;
+  float: left;
+  border: 1px solid black;
+  background: green;
+}
+.class01 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background: purple;
+}
