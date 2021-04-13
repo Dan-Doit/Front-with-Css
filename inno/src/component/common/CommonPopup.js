@@ -126,6 +126,7 @@ function ButtonMutate({label, isValid, popupFn, errShow, errPopupFn, queryOption
         <>
             <button
                 className={`btn_btm ${isValid ? 'create' : 'disable'}`}
+                disabled={!isValid}
                 onClick={() => {
                     errPopupFn.show()
                     let variables = {
